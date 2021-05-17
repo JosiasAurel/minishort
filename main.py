@@ -27,11 +27,13 @@ async def get_home(request: Request):
 @app.post("/shorten")
 async def shorten_url(url):
     # data = jsonable_encoder(url)
-    db.put(url, key=url)
-    return {"url": secrets.token_urlsafe(6)}
+    token = secrets.token_urlsafe(6)
+    db.put(url, key=token)
+    return {"url": token}
 
 
 @app.get("/{url}")
 async def redirect_to_(url):
     red_ = db.get(url)
-    return RedirectResponse(red_)
+    print(red_)
+    return RedirectResponse(red_["value"])
