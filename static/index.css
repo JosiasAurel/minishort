@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -19,4 +20,25 @@ header h2 {
     border: solid 1px black;
     border-radius: 4px;
     padding: 0.5em 1em 0.5em 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+form input, form button {
+    border: solid 1px black;
+    border-radius: 4px;
+    color: black;
+    background-color: transparent;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 0 0 0;
+}
+
+form button:hover {
+    color: white;
+    background-color: black;
 }
