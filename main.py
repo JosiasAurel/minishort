@@ -27,5 +27,4 @@ async def get_home(request: Request):
 @app.post("/shorten")
 async def shorten_url(url):
     # data = jsonable_encoder(url)
-    short = gen_url()
     return {"url": secrets.token_urlsafe(6)}
