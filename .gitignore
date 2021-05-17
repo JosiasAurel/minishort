@@ -2,3 +2,4 @@ __pycache__
 .deta
 deta
 *.pyc 
+.pytest_cache
