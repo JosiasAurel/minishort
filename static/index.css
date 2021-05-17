@@ -102,3 +102,9 @@ footer a {
     border-bottom: 2px dotted black;
     font-size: 2em;
 }
+
+@media screen and (max-width: 480px) {
+    form input, form button {
+        font-size: 1em;
+    }
+}
