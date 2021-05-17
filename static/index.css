@@ -12,6 +12,9 @@ body {
     display: none;
 }
 
+nav {
+    width: 100vw;
+}
 
 header {
     display: flex;
@@ -19,6 +22,9 @@ header {
     align-items: center;
     margin: 0 1em 0 1em;
     border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 95vw;
 }
 
 header h2 {
@@ -36,7 +42,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 form input, form button {
@@ -55,16 +61,18 @@ form button:hover {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
 footer a {
-    color: black;
+    color: white;
     text-decoration: none;
     border-bottom: 2px dotted black;
 }
@@ -85,6 +93,7 @@ footer a {
     border-radius: 4px;
     padding: 5px;
     overflow-x: scroll;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .short a {
