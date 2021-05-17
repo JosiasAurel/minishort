@@ -22,6 +22,11 @@ header h2 {
     padding: 0.5em 1em 0.5em 1em;
 }
 
+header h2:hover {
+    color: white;
+    background-color: black;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -36,9 +41,25 @@ form input, form button {
     background-color: transparent;
     padding: 1em 2em 1em 2em;
     margin: 1em 0 0 0;
+    font-size: 1.5em;
 }
 
 form button:hover {
     color: white;
     background-color: black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px dotted black;
 }
